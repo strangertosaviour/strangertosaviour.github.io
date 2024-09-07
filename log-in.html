@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style-log-in.css">
+    <meta charset="UTF-8">
+    <title>Raksha Log In</title>
+    <style>
+        .btn-ss {
+            border-radius: 8px;
+            background-color: cyan;
+            font-size: 15px;
+            padding: 10px;
+            color: black;
+            border: none;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            transition-duration: 0.4s;
+        }
+        .btn-ss:hover {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="content center" id="content">
+    <img src="https://i.imgur.com/IjMSL7Y.png" class="bob"> </img>
+    <img src="https://i.imgur.com/fvoWHTH.png" class="lefteye"> </img>
+    <img src="https://i.imgur.com/fvoWHTH.png" class="righteye"> </img>
+    <form class="f1" autocomplete="off">
+        <br>
+        <input type="text" name="username" placeholder="Username" id="user" oninput="inputFunction()" onfocus="focusFunction()" onblur="blurFunction()">
+        <br>
+        <input type="password" name="password" placeholder="Password" id="pass" onfocus="focusPasswordFunction()" onblur="blurPasswordFunction()">
+        <br><br>
+        <button type="button" class="btn-ss" onclick="location.href='monitor.html'">Submit</button>
+    </form>
+</div>
+<script src="js/log-in.js"></script>
+<script src="js/velocity.js"></script>
+</body>
+</html>
